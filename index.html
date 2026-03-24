@@ -45,7 +45,7 @@ h2 {
 }
 
 .section {
-  margin-top: 38px;
+  margin-top: 56px;
 }
 
 .muted {
@@ -87,24 +87,34 @@ img {
 }
 
 .band-photo {
-  margin-top: 18px;
+  margin: 24px 0 36px;
 }
 
 .band-photo img {
-  max-width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .artwork-block {
-  margin-top: 20px;
-  max-width: 680px;
+  margin-top: 30px;
+}
+
+.artwork-block img {
+  max-width: 420px;
+  margin: 0 auto;
 }
 
 .copy-block {
-  max-width: 760px;
+  max-width: 680px;
+}
+
+.copy-block p {
+  margin-bottom: 14px;
 }
 
 .player-block {
   margin-top: 16px;
+  max-width: 500px;
 }
 
 @media (max-width: 700px) {
@@ -115,12 +125,15 @@ img {
   h2 {
     font-size: 24px;
   }
-  .copy-block p {
-  margin-bottom: 16px;
-}
 
   .wrap {
     padding: 24px 16px 44px;
+  }
+
+  .band-photo img,
+  .artwork-block img,
+  .player-block {
+    max-width: 100%;
   }
 }
 </style>
@@ -134,8 +147,14 @@ img {
 
 <h1>Liberandos — EPK</h1>
 
-<div class="copy-block muted">
+<div class="band-photo">
+  <img src="LiberandosBest.jpg" alt="Liberandos band photo">
+  <p class="small">
+    <a href="LiberandosBest.jpg" download>Download band photo</a>
+  </p>
+</div>
 
+<div class="copy-block muted">
   <p>
     LIBERANDOS is a sonic bridge between two worlds. At its core, the duo (Adam Lindquist and Ben Mabry) engages in a unique act of musical translation: taking the hypnotic, rhythmic traditions of North Africa and Indian chant and reimagining them through their Southern roots background.
   </p>
@@ -159,14 +178,6 @@ img {
   <p>
     Fans of Tinariwen, Khruangbin, or early Beirut — especially those drawn to roots music that borrows freely across traditions — may find a natural entry point.
   </p>
-
-</div>
-
-<div class="band-photo">
-  <img src="LiberandosBest.jpg" alt="Liberandos band photo">
-  <p class="small">
-    <a href="LiberandosBest.jpg" download>Download band photo</a>
-  </p>
 </div>
 
 <div class="section">
@@ -188,12 +199,15 @@ img {
     <a class="btn" href="https://theliberandos.bandcamp.com/track/blood-orange">Bandcamp</a>
   </div>
 
-  <p class="copy-block" style="margin-top:16px;">
-    Blood Orange is anchored by a hypnotic, rolling groove—a lean guitar and bass figure that establishes a persistent, trance-like pulse. This foundational rhythm drives the track forward with an expansive, grounded energy, while intricate string arrangements weave through the melody to provide cinematic depth and organic warmth. Over this driving landscape, the soulful vocal delivery guides the listener through a slow-burning tension that eventually erupts into an intense, almost psychedelic build and climax.
-</p>
-   <p>
-Thematically, the song emerged from what singer and lyricist Ben describes as "scattered digital ephemera"—odd phrases and images saved for later. The track contemplates the moment of realization in a doomed relationship; that point where sheer will is exhausted and something supernatural breaks through. In the song’s "garden," the act of eating the blood orange signifies a reversal of the Eden narrative: it is not a fall from grace, but an awakening into clarity and freedom.
-  </p>
+  <div class="copy-block" style="margin-top:16px;">
+    <p>
+      Blood Orange is anchored by a hypnotic, rolling groove—a lean guitar and bass figure that establishes a persistent, trance-like pulse. This foundational rhythm drives the track forward with an expansive, grounded energy, while intricate string arrangements weave through the melody to provide cinematic depth and organic warmth. Over this driving landscape, the soulful vocal delivery guides the listener through a slow-burning tension that eventually erupts into an intense, almost psychedelic build and climax.
+    </p>
+
+    <p>
+      Thematically, the song emerged from what singer and lyricist Ben describes as “scattered digital ephemera” — odd phrases and images saved for later. The track contemplates the moment of realization in a doomed relationship; that point where sheer will is exhausted and something supernatural breaks through. In the song’s “garden,” the act of eating the blood orange signifies a reversal of the Eden narrative: it is not a fall from grace, but an awakening into clarity and freedom.
+    </p>
+  </div>
 
   <div class="artwork-block">
     <img src="Blood_Orange_Art.jpg" alt="Blood Orange artwork">
