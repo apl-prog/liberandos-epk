@@ -23,6 +23,7 @@ body {
 a {
   color: #d9d9d9;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -144,6 +145,22 @@ img {
   }
 }
 </style>
+
+<script>
+function toggleBio() {
+  const bio = document.getElementById('full-bio');
+  const link = document.getElementById('bio-toggle');
+
+  if (bio.style.display === 'none') {
+    bio.style.display = 'block';
+    link.textContent = 'Hide full bio';
+  } else {
+    bio.style.display = 'none';
+    link.textContent = 'Read full bio';
+  }
+}
+</script>
+
 </head>
 
 <body>
@@ -161,30 +178,38 @@ img {
   </p>
 </div>
 
-<div class="copy-block muted">
+<!-- SHORT BIO -->
+<div class="copy-block">
+
   <p>
-    LIBERANDOS is a sonic bridge between two worlds. At its core, the duo (Adam Lindquist and Ben Mabry) engages in a unique act of musical translation: taking the hypnotic, rhythmic traditions of North Africa and Indian chant and reimagining them through their Southern roots background.
+    LIBERANDOS is a sonic bridge between worlds. The duo (Adam Lindquist and Ben Mabry) reimagines the hypnotic rhythms of North Africa and Indian chant through a Southern roots lens, building trance-like compositions from hand percussion, droning guitars, and layered strings and winds. The result is a sound that feels circular, physical, and unresolved.
+  </p>
+
+  <p class="small muted" style="margin-top:14px;">
+    <a id="bio-toggle" onclick="toggleBio()">Read full bio</a>
+  </p>
+
+</div>
+
+<!-- FULL BIO -->
+<div id="full-bio" class="copy-block muted" style="display:none; margin-top:20px;">
+
+  <p>
+    Abandoning the drum kit entirely, Liberandos builds its music from hand percussion, low persistent grooves, droning guitars, and DIY orchestras of strings and winds. Drawing on pentatonic and Eastern-influenced approaches, the arrangements often leave harmonic space intentionally open, giving the songs a ritual, trance-like pull.
   </p>
 
   <p>
-    Abandoning the drum kit entirely, Adam constructs dense, trance-like foundations from hand percussion, droning guitars, and DIY orchestras (violins, clarinets), often drawing on pentatonic and Eastern-inspired scales that leave harmonic space open and unresolved. The result is a music that feels circular and ritualistic.
+    Ben’s vocals and lyrics move through these structures intuitively, shaped by a Southern Pentecostal upbringing, apocalyptic imagery, and the grit of ’90s alternative rock. His melodies complete the harmonic picture, balancing restraint and intensity, while the lyrics draw from inherited spiritual language refracted through a present-day cultural weight.
   </p>
 
   <p>
-    Ben’s vocals and lyrics move through these structures intuitively, shaped by a Southern Pentecostal upbringing, the looming imagery of Armageddon, and the grit of ’90s alternative rock. His melodies often complete the harmonic picture, filling in emotional color, with a push-and-pull of intensity. Lyrically, the songs sit at the intersection of inherited spiritual language and a present-day cultural heaviness — music that acknowledges dread without dramatizing it.
+    The duo often imagines each song as a physical place: a village gathering where everyone brings an instrument, a ceremony unfolding inside a pyramid, or a journey through a walled garden. These settings guide the arrangements and give the music a communal, cinematic quality.
   </p>
 
   <p>
-    The duo often imagines each song as a physical place: a village gathering where everyone brings an instrument, a ceremony unfolding inside a pyramid, or a journey through a walled garden. Those imagined settings guide the arrangements, often giving the music a collective, almost communal feeling.
+    Mabry (Beta Radio) and Lindquist (River Lume) step outside their respective projects with Liberandos to explore a shared language — one tuned to a strange, bleeding frequency where ancient rhythm and Southern song meet.
   </p>
 
-  <p>
-    Ben Mabry is also one half of the indie-folk duo Beta Radio, while Adam Lindquist releases solo work under the name River Lume. With Liberandos, the two step outside their other projects to explore a shared language — one tuned to a strange, bleeding frequency where ancient rhythm and Southern song meet.
-  </p>
-
-  <p>
-    Fans of Tinariwen, Khruangbin, or early Beirut — especially those drawn to roots music that borrows freely across traditions — may find a natural entry point.
-  </p>
 </div>
 
 <div class="section">
